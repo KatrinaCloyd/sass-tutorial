@@ -1,0 +1,51 @@
+// colors
+$text: #540b84;
+$black: #540b84;
+$bkg: #edf9fd;
+$ltBlue: #c3edfa;
+$medblue: #1dbced;
+$pink: #f72684;
+$purple: #7909c3;
+
+// color pallette
+$colors: (
+  "text": $text,
+  "black": $black,
+  "bkg": $bkg,
+  "ltBlue": $ltBlue,
+  "medblue": $medblue,
+  "pink": $pink,
+  "purple": $purple,
+);
+
+.test-btn {
+  background-color: map-get($colors, "orange");
+}
+
+// @debug map-get($colors, "purple");
+// @debug map-has-key($colors, "hotpink");
+// @debug map-remove($colors, "brown");
+// @debug map-merge(
+//   $colors,
+//   (
+//     "piiink": #ffc0cb,
+//   )
+// );
+
+//spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+$fit-width: fit-content;
+
+// borders
+$base-border-thick: 1px;
+$base-border-radius: 20px;
+
+// box-shadow
+$base-box-shad: 1px 3px 5px $medblue;
+
+// font size
+$base-font-size: 1rem;
+$heading-font-size: 1.5rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: 2rem;

@@ -1,0 +1,249 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Sass Tutorial</title>
+  </head>
+  <body>
+    <nav class="nav-ltBlue">
+      <h1>Nav Bar</h1>
+      <ul class="display-f gap-3">
+        <li>
+          <p>sass library - tutorial site</p>
+        </li>
+        <li>
+          <a href="#" class="text-hover-purple">Nav Link 1</a>
+        </li>
+        <li>
+          <a href="#" class="text-hover-purple">Nav Link 2</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Oh, Hullo There!</h1>
+      <p>
+        Body copy lorem ipsum dolor sit amet consectetur,
+        <a href="#"> Default Link Hover</a>
+        molestiae corporis dolorem voluptatum illum iusto, ex autem saepe
+        facilis sit porro, incidunt ipsam. Assumenda deserunt adipisci nulla
+        velit possimus eum.
+      </p>
+      <br />
+      <span class="error mr-1">Here is an error</span>
+      <span class="notification">Here is a notification</span><br /><br />
+      <button class="btn">default Button</button>
+
+      <br /><br />
+      <!-- show color options -->
+      <h2>Color Pallette</h2>
+      <div class="row gap-2 mb-2">
+        <div class="col-12-sm col-4-md col-2-lg bg-bkg p-1 bor simple-card">
+          <p class="m-0">bkg - <br />pale blue</p>
+        </div>
+        <div class="col-12-sm col-4-md col-2-lg bg-ltBlue p-1 simple-card">
+          <p class="m-0">ltblue - <br />light blue</p>
+        </div>
+        <div class="col-12-sm col-4-md col-2-lg bg-medblue p-2 simple-card">
+          <p class="text-bkg m-0">medblue - <br />medium blue</p>
+        </div>
+        <div class="col-12-sm col-4-md col-2-lg bg-pink p-1 simple-card">
+          <p class="text-bkg m-0">pink</p>
+        </div>
+        <div class="col-12-sm col-4-md col-2-lg bg-purple p-1 simple-card">
+          <p class="text-bkg m-0">purple - <br />primary purple</p>
+        </div>
+        <div class="col-12-sm col-4-md col-2-lg bg-black p-1 simple-card">
+          <p class="text-bkg m-0">'black' & text -<br />dark purple</p>
+        </div>
+      </div>
+      <h4>Text Color Options:</h4>
+      <p>
+        <span class="text-text">default 'black' color text</span> |
+        <span class="text-bkg bg-black"
+          >background text - only use on dark</span
+        >
+        |
+        <span class="text-ltBlue bg-black"
+          >light blue text - only use on dark</span
+        >
+        | <span class="text-medblue">medium blue text</span> |
+        <span class="text-pink">pink text</span> |
+        <span class="text-purple">purple text</span>
+      </p>
+      <br />
+      <h4>Background Color Options:</h4>
+      <p>
+        <span class="bg-bkg">default pale blue background</span> |
+        <span class="bg-ltBlue">light blue background</span> |
+        <span class="bg-medblue">medium blue background</span> |
+        <span class="bg-pink text-bkg">pink background</span> |
+        <span class="bg-purple text-bkg">purple background</span>
+        <span class="bg-black text-bkg">'black' background</span>
+      </p>
+      <br />
+      <h4>Light Background Color Variations:</h4>
+      <p>
+        <span class="bg-black-light-1 text-bkg">'black' bg light 1-----</span>
+        <span class="bg-black-light-3 text-bkg">'black' bg light 3-----</span>
+        <span class="bg-black-light-5">'black' bg light 5-----</span>
+        <span class="bg-black-light-7">'black' bg light 7-----</span>
+        <span class="bg-black-light-9">'black' bg light 9-----</span>
+      </p>
+      <p>
+        <span class="bg-purple-light-1 text-bkg">'purple' bg light 1-----</span>
+        <span class="bg-purple-light-3 text-bkg">'purple' bg light 3-----</span>
+        <span class="bg-purple-light-5">'purple' bg light 5-----</span>
+        <span class="bg-purple-light-7">'purple' bg light 7-----</span>
+        <span class="bg-purple-light-9">'purple' bg light 9-----</span>
+      </p>
+      <p>
+        <span class="bg-pink-light-1 text-bkg">'pink' bg light 1-----</span>
+        <span class="bg-pink-light-3">'pink' bg light 3-----</span>
+        <span class="bg-pink-light-5">'pink' bg light 5-----</span>
+        <span class="bg-pink-light-7">'pink' bg light 7-----</span>
+        <span class="bg-pink-light-9">'pink' bg light 9-----</span>
+      </p>
+      <p>
+        <span class="bg-medblue-light-1 text-bkg"
+          >'medblue' bg light 1-----</span
+        >
+        <span class="bg-medblue-light-3">'medblue' bg light 3-----</span>
+        <span class="bg-medblue-light-5">'medblue' bg light 5-----</span>
+        <span class="bg-medblue-light-7">'medblue' bg light 7-----</span>
+        <span class="bg-medblue-light-9">'medblue' bg light 9-----</span>
+      </p>
+      <br />
+      <h4>Dark Background Color Variations:</h4>
+      <p>
+        <span class="bg-black-dark-1 text-bkg">'black' bg dark 1-----</span>
+        <span class="bg-black-dark-3 text-bkg">'black' bg dark 3-----</span>
+        <span class="bg-black-dark-5 text-bkg">'black' bg dark 5-----</span>
+        <span class="bg-black-dark-7 text-bkg">'black' bg dark 7-----</span>
+        <span class="bg-black-dark-9 text-bkg">'black' bg dark 9-----</span>
+      </p>
+      <p>
+        <span class="bg-purple-dark-1 text-bkg">'purple' bg dark 1-----</span>
+        <span class="bg-purple-dark-3 text-bkg">'purple' bg dark 3-----</span>
+        <span class="bg-purple-dark-5 text-bkg">'purple' bg dark 5-----</span>
+        <span class="bg-purple-dark-7 text-bkg">'purple' bg dark 7-----</span>
+        <span class="bg-purple-dark-9 text-bkg">'purple' bg dark 9-----</span>
+      </p>
+      <p>
+        <span class="bg-pink-dark-1 text-bkg">'pink' bg dark 1-----</span>
+        <span class="bg-pink-dark-3 text-bkg">'pink' bg dark 3-----</span>
+        <span class="bg-pink-dark-5 text-bkg">'pink' bg dark 5-----</span>
+        <span class="bg-pink-dark-7 text-bkg">'pink' bg dark 7-----</span>
+        <span class="bg-pink-dark-9 text-bkg">'pink' bg dark 9-----</span>
+      </p>
+      <p>
+        <span class="bg-medblue-dark-1 text-bkg">'medblue' bg dark 1-----</span>
+        <span class="bg-medblue-dark-3 text-bkg">'medblue' bg dark 3-----</span>
+        <span class="bg-medblue-dark-5 text-bkg">'medblue' bg dark 5-----</span>
+        <span class="bg-medblue-dark-7 text-bkg">'medblue' bg dark 7-----</span>
+        <span class="bg-medblue-dark-9 text-bkg">'medblue' bg dark 9-----</span>
+      </p>
+
+      <br />
+      <h4>Hover Color Options:</h4>
+      <a href="#">DEFAULT - medblue hover</a> |
+      <a href="#" class="text-hover-pink">pink hover</a> |
+      <a href="#" class="text-hover-purple">purple hover</a> |
+      <a href="#" class="text-hover-black">black hover</a>
+      <!-- show font sizes -->
+      <br /><br />
+      <h4>Font Size Options:</h4>
+      <p></p>
+      <p class="m-0 font-xs">Extra Small Font Size</p>
+      <p class="m-0">Small Font Size</p>
+      <p class="m-0 font-md">Medium Font Size - default P tag size</p>
+      <p class="m-0 font-lg">Large Font Size</p>
+      <p class="m-0 font-xl">X-Large Font Size</p>
+      <p class="m-0 font-xxl">XX-Large Font Size</p>
+      <br /><br />
+      <!-- break point example -->
+      <h4>Breakpoint Example:</h4>
+      <div class="breakpoint-test">
+        Resize window to see responsive changes.
+      </div>
+
+      <!-- show button options -->
+      <br />
+      <br />
+      <h4>Button Options:</h4>
+      <button class="btn-outline-black">Black Outline</button>
+      <button class="btn-outline-medblue">Medium Blue Outline</button>
+      <button class="btn-outline-pink">Pink Outline</button>
+      <button class="btn-outline-purple">Purple Outline</button><br />
+      <button class="btn-ltBlue">Light Blue</button>
+      <button class="btn-medblue">Medium Blue</button>
+      <button class="btn-pink">Pink</button>
+      <button class="btn-purple">Purple</button>
+      <br /><br />
+      <h4>
+        Only Two Complimentary Color Button Options That Are Not Horrible:
+      </h4>
+      <button class="btn-comp-pink">pink</button>
+      <button class="btn-comp-purple">Purple</button>
+      <!-- show cards  -->
+      <br /><br />
+      <div>
+        <h2>Cards</h2>
+        <div class="card">
+          <h3 class="card-title">Card #1</h3>
+          <p class="card-body">
+            Lorem ipsum dolor sit, <a href="#">amet consectetur</a> adipisicing
+            elit. Accusamus, aut. Quisquam culpa exercitationem ex saepe nisi
+            fugiat voluptatum libero voluptas?
+          </p>
+        </div>
+      </div>
+      <br /><br />
+      <!-- show grid system -->
+      <div>
+        <h2>Grid System</h2>
+        <div class="row gap-3 jc-center">
+          <div class="card col-12-sm col-5-md col-3-xl">
+            <h3 class="card-title">Card in Grid</h3>
+            <p class="card-body">
+              Lorem ipsum dolor sit,
+              <a href="#">amet consectetur</a> adipisicing elit. Accusamus, aut.
+              Quisquam culpa exercitationem ex saepe nisi fugiat voluptatum
+              libero voluptas?
+            </p>
+          </div>
+          <div class="card col-12-sm col-5-md col-3-xl">
+            <h3 class="card-title">Card in Grid</h3>
+            <p class="card-body">
+              Lorem ipsum dolor sit,
+              <a href="#">amet consectetur</a> adipisicing elit. Accusamus, aut.
+              Quisquam culpa exercitationem ex saepe nisi fugiat voluptatum
+              libero voluptas?
+            </p>
+          </div>
+          <div class="card col-12-sm col-5-md col-3-xl">
+            <h3 class="card-title">Card in Grid</h3>
+            <p class="card-body">
+              Lorem ipsum dolor sit,
+              <a href="#">amet consectetur</a> adipisicing elit. Accusamus, aut.
+              Quisquam culpa exercitationem ex saepe nisi fugiat voluptatum
+              libero voluptas?
+            </p>
+          </div>
+          <div class="card col-12-sm col-5-md col-3-xl">
+            <h3 class="card-title">Card in Grid</h3>
+            <p class="card-body">
+              Lorem ipsum dolor sit,
+              <a href="#">amet consectetur</a> adipisicing elit. Accusamus, aut.
+              Quisquam culpa exercitationem ex saepe nisi fugiat voluptatum
+              libero voluptas?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- show utilities -->
+    </div>
+  </body>
+</html>

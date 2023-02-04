@@ -1,0 +1,21 @@
+//order of imports is important base needs variables
+
+// variables & functions
+@import "functions";
+@import "variables";
+
+// base resets and layout
+@import "base";
+@import "breakpoints";
+@import "grid";
+
+// colors
+@import "colors";
+
+// component specific styles
+@import "components/card";
+@import "components/button";
+@import "components/nav";
+
+// utilities (margins, padding, opacity)
+@import "utilities";

@@ -1,0 +1,32 @@
+// sass math function works the same as using calc()
+@use "sass:math";
+
+.card {
+  display: block;
+  padding: $base-padding;
+  border: $base-border-thick solid $black;
+  box-shadow: $base-box-shad;
+  border-radius: math.div($base-border-radius, 4);
+  flex-grow: 1;
+
+  .card-title {
+    font-size: $heading-font-size;
+    padding-block-end: $base-padding;
+    font-weight: bold;
+    color: $purple;
+  }
+
+  .card-body {
+    font-size: $base-font-size;
+    a {
+      text-decoration-color: $medblue;
+    }
+  }
+}
+
+.simple-card {
+  border: 5px solid white;
+}
+
+// debug prints to terminal window, not console
+// @debug "hello booger";

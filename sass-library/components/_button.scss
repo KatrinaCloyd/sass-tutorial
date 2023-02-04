@@ -1,0 +1,51 @@
+@mixin btn-base($bg-clr: $purple, $text-clr: $ltBlue) {
+  border-radius: calc($base-border-radius * 5);
+  padding: $base-padding;
+  padding-inline: 20px;
+  transition: all ease 0.2s;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: $bg-clr;
+  border: solid 3px $purple;
+  color: $text-clr;
+  margin: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: $text-clr;
+    color: $bg-clr;
+  }
+}
+
+@each $key, $value in $colors {
+  @if ($key != "text" and $key != "black" and $key != "bkg") {
+    .btn-#{$key} {
+      @include btn-base($value, $black);
+      border: none;
+    }
+  }
+  @if ($key == "purple" or $key == "pink") {
+    .btn-#{$key} {
+      @include btn-base($value, $ltBlue);
+      border: none;
+    }
+  }
+  @if ($key != "bkg" and $key != "ltBlue") {
+    .btn-outline-#{$key} {
+      @include btn-base($ltBlue, $value);
+      border: solid 3px $value;
+    }
+  }
+
+  .btn-comp-#{$key} {
+    @include btn-base($value, $ltBlue);
+    color: light-comp($value);
+    &:hover {
+      color: $value;
+      background-color: light-comp($value);
+    }
+  }
+}
+
+.btn {
+  @include btn-base();
+}

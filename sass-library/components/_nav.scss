@@ -1,0 +1,42 @@
+// % instead of . is a 'place holder' syntax
+// adds properties directly to whatever class is extending it
+// but will not compile to its own rule since we
+// wont ever be using it on its own in the html
+
+//.flex-layout {
+%flex-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  @extend %flex-layout;
+  padding-inline: 20px;
+  padding-block: $base-padding * 2;
+  box-shadow: $base-box-shad;
+  margin: auto;
+  margin-block-end: 20px;
+  max-width: 1200px;
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: $font-size-lg;
+    color: $text;
+  }
+}
+
+// extend is different from mixin
+// no arguments just adding another group of styles
+// browser reads it as nested in the same way as the .title is nested
+
+// nav color variations
+@each $key, $value in $colors {
+  .nav-#{$key} {
+    @extend .nav;
+    background-color: $value;
+  }
+}

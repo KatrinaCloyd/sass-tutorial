@@ -1,0 +1,41 @@
+// for each loop
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value;
+  }
+  @if ($key != "bkg" and $key != "ltBlue") {
+    .text-hover-#{$key} {
+      &:hover {
+        color: $value;
+      }
+    }
+  }
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  // wrapping if statement blocks creation of bkg light and dark variations
+  @if ($key != "bkg") {
+    // for loop to make light vars
+    @for $i from 1 through 9 {
+      .text-#{$key}-light-#{$i} {
+        color: mix(white, $value, $i * 10 * 1%);
+      }
+
+      .bg-#{$key}-light-#{$i} {
+        background-color: mix(white, $value, $i * 10 * 1%);
+      }
+    }
+
+    // for loop to make light vars
+    @for $i from 1 through 9 {
+      .text-#{$key}-dark-#{$i} {
+        color: mix(black, $value, $i * 10 * 1%);
+      }
+
+      .bg-#{$key}-dark-#{$i} {
+        background-color: mix(black, $value, $i * 10 * 1%);
+      }
+    }
+  }
+}
